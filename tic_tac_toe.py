@@ -28,7 +28,7 @@ def start_game():
     sys.stdout.write(
         "\nInstructions\n"
         + "------------------------------------------------------------------------------------------------------------\n"
-        "Hello, players! Welcome to the classic game, tic-tac-toe!\n"
+        + "Hello, players! Welcome to the classic game, tic-tac-toe!\n"
         + 'To play, choose to be "x" or "o"\n'
         + "When it is your turn, enter the row and column in which you wish to put your character on the board.\n"
         + 'For example, if you wish to play in the first position from left to right, enter "0, 0" when prompted.\n'
@@ -82,7 +82,7 @@ def convert_to_tuple(input_string):
         return False
     x, y = remove_space.split(",")
     # verify types
-    if not x.isdigit() and not y.isdigit():
+    if not x.isdigit() or not y.isdigit():
         return False
     else:
         x, y = int(x), int(y)

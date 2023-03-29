@@ -109,7 +109,6 @@ def get_winner(board):
         x2, y2 = win[2]
         if board[x0][y0] == board[x1][y1] == board[x2][y2] and board[x0][y0] != "-":
             return board[x0][y0]
-    # check whether board is filled, if there is no winner
     return None
 
 

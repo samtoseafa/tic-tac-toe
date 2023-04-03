@@ -27,14 +27,14 @@ def start_game():
     chosen_player = choice(["x", "o"])
     sys.stdout.write(
         "\nInstructions\n"
-        + "------------------------------------------------------------------------------------------------------------\n"
-        + "Hello, players! Welcome to the classic game, tic-tac-toe!\n"
-        + 'To play, choose to be "x" or "o"\n'
-        + "When it is your turn, enter the row and column in which you wish to put your character on the board.\n"
-        + 'For example, if you wish to play in the first position from left to right, enter "0, 0" when prompted.\n'
-        + "Note that row and column indices start from 0 and end at 2.\n"
-        + "Now, let's have some fun!\n"
-        + "------------------------------------------------------------------------------------------------------------\n"
+        + "+---------------------------------------------------------------------------------------------------------------+\n"
+        + "|     Hello, players! Welcome to the classic game, tic-tac-toe!                                                 |\n"                                               
+        + '|     To play, choose to be "x" or "o".                                                                         |\n'
+        + "|     When it is your turn, enter the row and column in which you wish to put your character on the board.      |\n"
+        + '|     For example, if you wish to play in the first position from left to right, enter "0, 0" when prompted.    |\n'
+        + "|     Note that row and column indices start from 0 and end at 2.                                               |\n"
+        + "|     Now, let's have some fun!                                                                                 |\n"
+        + "+---------------------------------------------------------------------------------------------------------------+\n"
     )
 
     # initialize gameplay loop
